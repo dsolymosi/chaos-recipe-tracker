@@ -1,0 +1,44 @@
+####
+# config file for chaos recipe tracker
+# written by coldie48
+# no guarantees that it works
+# 
+# USAGE:
+# 1. change some of the config options below
+#
+# 1.a. changeid is the point in time from which the app tracks items.
+#      the app will probably NOT work unless you update changeid before launching!
+#      use a current changeid from:  http://poe.ninja/stats
+#
+# 2. launch chaos-recipe-tracker.exe
+#
+# 3. navigate your browser (only tested chrome) to  http://localhost:8080/
+#    wait a few sec, it should be working..
+#    place your chaos recipe items in public tabs (make sure to name them the same as the config option below)
+#
+#
+# 4?. why is it not working? try: -put new items in the stash tabs
+#                                 -update changeid and restart chaos-recipe-tracker.exe
+#                                 -wait
+####
+
+
+# number of ms to sleep between API calls
+sleeptime = 800	
+
+# league to check
+league = "2 Week Mayhem HC Solo (JRE093)"
+
+# a default user that is added to the list of farmers. USE ACCOUNT NAMES!
+defaultuser = "coldie48"
+
+# the app only checks for items in tabs starting with this
+# e.g. if this is "chaos", tabs like 'chaos-1', 'chaos sale', etc. work
+stashname = "chaos"
+
+
+####
+# changeid. IMPORTANT: update this before launching, from  http://poe.ninja/stats
+####
+changeid = "70913744-74645884-69852371-81189052-75495306"
+
